@@ -1,0 +1,37 @@
+/* src/components/Header.css */
+.header {
+    background-color: rgb(0, 110, 183); 
+    padding: 10px 20px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo {
+    width: 150px; 
+    height:auto ; 
+}
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links a{
+    margin: 0 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links a:hover{
+    color: #fff;
+}
