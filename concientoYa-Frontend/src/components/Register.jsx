@@ -9,7 +9,7 @@ function Register() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí va la lógica para registrar un usuario (en un proyecto real, puedes usar una API)
+    // Aquí va la lógica para registrar un usuario
     alert("Registro exitoso");
     navigate("/login");
   };

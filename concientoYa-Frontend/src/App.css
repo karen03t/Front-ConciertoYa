@@ -1,28 +1,16 @@
-/* App.css */
+/* Reset general de márgenes y rellenos */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Asegúrate de que el body no tenga ningún margen o relleno */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  @media (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .nav-links {
-      flex-direction: column;
-      gap: 10px;
-      justify-content: center;
-    }
-  
-    .home-container {
-      padding-top: 80px; /* Menos espacio arriba en dispositivos móviles */
-    }
-  
-    .card {
-      width: 100%;
-    }
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}

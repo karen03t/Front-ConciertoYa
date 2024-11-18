@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-d
 import Login from "./components/Login";
 import Home from "./components/Home";
 
+
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
