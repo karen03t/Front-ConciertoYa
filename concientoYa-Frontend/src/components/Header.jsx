@@ -19,14 +19,15 @@ const Header = () => {
           Conciertos
           <span className="badge">5</span> {/* Indicador de disponibilidad */}
         </Link>
-
+        <Link to="/eventos/exposiciones" className="nav-link">Exposiciones</Link>
+        <Link to="/eventos/teatro" className="nav-link">Teatro</Link>
         <Link to="/carrito" className="nav-link">Carrito</Link>
         <Link to="/admin" className="nav-link">Admin</Link>
       </nav>
       <div className="user-actions">
         <div className="notification-icon">
           <FaBell size={25} />
-          <span className="badge"></span> {/* Número de notificaciones */}
+          <span className="badge">3</span> {/* Número de notificaciones */}
         </div>
         <div className="user-icon">
           <FaUserCircle size={30} color="#f0f0f0" />
