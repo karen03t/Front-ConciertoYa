@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <p>&copy; 2024 ConciertoYa. Todos los derechos reservados.</p>
-      
+
       <div className="social-links">
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
           <FaFacebookF />
@@ -22,7 +22,7 @@ const Footer = () => {
           <FaLinkedin />
         </a>
       </div>
-      
+
       <div className="footer-links">
         <a href="/about">Acerca de</a>
         <a href="/contact">Contacto</a>

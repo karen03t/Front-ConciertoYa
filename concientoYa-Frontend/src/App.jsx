@@ -7,7 +7,7 @@ import SeatSelection from "./components/SeatSelection";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-
+  console.log(isAuthenticated); // Verifica si el estado cambia después del login
   return (
     <Router>
       <Routes>
@@ -16,8 +16,8 @@ function App() {
           element={isAuthenticated ? <Home /> : <Navigate to="/login" />} 
         />
         <Route 
-          path="/login" 
-          element={<Login setIsAuthenticated={setIsAuthenticated} />} 
+          path="/login"
+          element={<Login setIsAuthenticated={setIsAuthenticated} />}
         />
         <Route path="Seats" element={<SeatSelection />} 
         />

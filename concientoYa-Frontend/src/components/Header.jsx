@@ -21,8 +21,7 @@ const Header = () => {
         </Link>
         <Link to="/eventos/exposiciones" className="nav-link">Exposiciones</Link>
         <Link to="/eventos/teatro" className="nav-link">Teatro</Link>
-        <Link to="/carrito" className="nav-link">Carrito</Link>
-        <Link to="/admin" className="nav-link">Admin</Link>
+
       </nav>
       <div className="user-actions">
         <div className="notification-icon">

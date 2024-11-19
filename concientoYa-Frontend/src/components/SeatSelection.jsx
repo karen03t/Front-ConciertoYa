@@ -5,7 +5,7 @@ import "./SeatSelection.css";
 const SeatSelection = () => {
 const [seats, setSeats] = useState([
 { id: 1, name: "VIP 1", price: 200, selected : false, position: { top: "73%", left: "45%" } },
-{ id: 2, name: "VIP 1", price: 200, selected : false, position: { top: "73%", left: "25.6%" } },
+{ id: 2, name: "VIP 1", price: 200, selected : false, position: { top: "40%", left: "25.6%" } },
 { id: 3, name: "VIP 1", price: 200, selected : false, position: { top: "73%", left: "66%" } },
 { id: 4, name: "Platino ", price: 150, selected : false,position: { top: "87%", left: "25.8%" } },
 { id: 5, name: "Platino ", price: 150, selected : false,position: { top: "87%", left: "45%" } },

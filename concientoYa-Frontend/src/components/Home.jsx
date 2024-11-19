@@ -1,28 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import Header from './Header';
+import Footer from './Footer';
 
 const Home = () => {
   const [artistas, setArtistas] = useState([]);
   const [lugares, setLugares] = useState([]);
   const [eventos, setEventos] = useState([]);
-  const [compras, setCompras] = useState(0); // Contador de compras
+  const [compras, setCompras] = useState(0);
 
   useEffect(() => {
-    // Simulación de datos de artistas
     setArtistas([
       { id: 1, nombre: 'Artista 1', genero_musical: 'Rock', redes_sociales: 'https://facebook.com/artista1' },
       { id: 2, nombre: 'Artista 2', genero_musical: 'Pop', redes_sociales: 'https://instagram.com/artista2' },
     ]);
 
-    // Simulación de datos de lugares
     setLugares([
       { id: 1, nombre: 'Lugar 1', direccion: 'Calle 123', capacidad: 5000, ciudad: 'Ciudad 1', imagen: '/imagenes/lugar1.jpg' },
       { id: 2, nombre: 'Lugar 2', direccion: 'Avenida 456', capacidad: 3000, ciudad: 'Ciudad 2', imagen: '/imagenes/lugar2.jpg' },
     ]);
 
-    // Simulación de datos de eventos
     setEventos([
       { id: 1, nombre: 'Concierto de Artista 1', fecha: '2024-05-20', hora: '20:00', descripcion: 'Un gran concierto de rock.', genero_musical: 'Rock', estado: 'programado', lugar_id: 1 },
       { id: 2, nombre: 'Concierto de Artista 2', fecha: '2024-06-15', hora: '19:00', descripcion: 'Un concierto pop inolvidable.', genero_musical: 'Pop', estado: 'programado', lugar_id: 2 },
@@ -36,10 +33,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <header className="hero">
-        <h1>Bienvenidos a ConciertoYa</h1>
-        <p>Encuentra los mejores conciertos, compra tus entradas y disfruta del mejor espectáculo.</p>
-      </header>
+      <Header />
 
       <section className="section artistas">
         <h2>Artistas Destacados</h2>
@@ -81,18 +75,20 @@ const Home = () => {
               <p>Género: {evento.genero_musical}</p>
               <p>Estado: {evento.estado}</p>
               <button className="btn-comprar">
-                <FontAwesomeIcon icon={faShoppingCart} /> Comprar Entradas
+                Comprar Entradas
               </button>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Icono de carrito de compras */}
       <div className="cart-icon" onClick={() => alert('¡Carrito de compras!')}>
-        <FontAwesomeIcon icon={faShoppingCart} size="2x" />
+        {/* Cambié el ícono FontAwesome por Material Icons */}
+        <span className="material-icons" style={{ fontSize: '2rem' }}>shopping_cart</span>
         {compras > 0 && <span className="cart-count">{compras}</span>}
       </div>
+
+      <Footer />
     </div>
   );
 };
